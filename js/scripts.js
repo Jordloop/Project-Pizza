@@ -3,11 +3,14 @@
  // DECLARE GLOBAL VARIABLES
 var pizzaSize
 var toppingsArray = [];
+
  //PIZZA CONSTRUCTOR
 function Pizza(size, toppings) {
   this.size = size;
   this.toppings = toppings;
+  this.price = 0;
 };
+
  // CALCULATES TOTAL PRICE OF A PIZZA
 Pizza.prototype.orderTotal = function() {
   if (this.toppings.length <= 1) {
@@ -33,7 +36,8 @@ $(document).ready(function() {
 
     // INITALIZES PIZZA CONSTRUCTOR
     pizzaOrder = new Pizza(pizzaSize, toppingsArray);
-    var test =  pizzaOrder.orderTotal();
-    console.log("total: " + test);
+    pizzaOrder.price =  pizzaOrder.orderTotal();
+    // CLEARS ALL ELEMENTS IN TOPPING PROPERTY
+    pizzaOrder.toppings.splice(0);
   }); // submit button
 }); // Doc ready
