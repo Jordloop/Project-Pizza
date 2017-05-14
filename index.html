@@ -10,24 +10,26 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
+      <h1 class="jumbotron">Order a flipping pizza.</h1>
+      <h4 class="centered">Each pizza comes with cheese and one topping. Each additional toppings : $1 each</h4>
+      <div class="row well">
 
-        <div class="col-md-6 box">
+        <div class="col-md-6">
           <form class="user-form">
             <!-- PIZZA SIZE -->
             <div class="form-group">
-              <label for="exampleSelect1">What size pizza would you like?</label>
+              <label for="exampleSelect1">Select pizza size</label>
               <select class="form-control" id="pizzaSize">
-                <option value="6">Personal</option>
-                <option value="9">Small</option>
-                <option value="13">Medium</option>
-                <option value="16">Large</option>
-                <option value="20">Crazy Large</option>
+                <option value="6">Personal - $6</option>
+                <option value="9">Small - $9</option>
+                <option value="13">Medium - $13</option>
+                <option value="16">Large - $16</option>
+                <option value="20">Crazy Large - $20</option>
               </select>
             </div>
             <!-- PIZZA TOPPINGS -->
             <div class="form-group">
-
+              <label for="topping">Select your toppings</label><br>
               <input class="toppings" type="checkbox" name="topping" value="Peperoni">Peperoni
               <input class="toppings" type="checkbox" name="topping" value="Sausage">Sausage
               <input class="toppings" type="checkbox" name="topping" value="Bacon">Bacon<br>
@@ -37,13 +39,17 @@
               <input class="toppings" type="checkbox" name="topping" value="Pineapple">Pineapple
               <input class="toppings" type="checkbox" name="topping" value="Sun Dried Tomato">Sun Dried Tomato
               <input class="toppings" type="checkbox" name="topping" value="Extra Cheese">Extra Cheese<br>
-
             </div>
             <button type="submit" name="button">Submit</button>
           </form>
         </div>
-        <div class="col-md-6 box">
+        <div class="col-md-6 ">
+          <div id="receipt">
+            <h3>Order Complete!</h3>
+            Thank you for clicking some buttons!<br>
+            Your total is $<span id="total-price"></span>
 
+          </div>
         </div>
       </div>
 

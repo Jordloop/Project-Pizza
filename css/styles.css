@@ -1,3 +1,11 @@
 .toppings {
   padding-bottom: 10px;
 }
+
+.jumbotron, .centered {
+  text-align: center;
+}
+
+#receipt {
+  display: none;
+}
