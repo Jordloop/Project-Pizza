@@ -1,3 +1,8 @@
+body {
+  font-family: sans-serif;
+  background-color: #A2AAB0;
+}
+
 .toppings {
   padding-bottom: 10px;
 }
@@ -8,4 +13,8 @@
 
 #receipt {
   display: none;
+}
+
+.jumbotron, .well{
+    background-color: #EBECED;
 }
