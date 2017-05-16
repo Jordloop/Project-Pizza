@@ -8,8 +8,14 @@ Create a website for a pizza company where a user can choose one or more individ
 
 ## Specs
 
+* User selects a pizza size.
+  Input: Personal  Output: $6
+
+* User selects a number of pizza toppings (Add $1 to the total for each topping chosen -1).
+  Input: User checks 4 toppings boxes.    Output: Will add $3 to the total.
+
 User selects pizza size and toppings and a price is returned.
-Input: User selects "personal" size and 3 toppings.  Output: $8.
+  Input: User selects "personal" size and 4 toppings.  Output: $9 ($6 for the personal, $3 for the 4 toppings).
 
 
 ## Getting Started

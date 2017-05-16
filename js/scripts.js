@@ -15,7 +15,7 @@ function Pizza(size, toppings) {
 Pizza.prototype.orderTotal = function() {
   if (this.toppings.length <= 1) {
     return this.size
-  } else if (this.toppings.length > 1) {
+  } else {
     return this.size + (this.toppings.length - 1);
   }
 };
@@ -35,7 +35,7 @@ $(document).ready(function() {
     // INITALIZES PIZZA CONSTRUCTOR
     pizzaOrder = new Pizza(pizzaSize, toppingsArray);
     pizzaOrder.price =  pizzaOrder.orderTotal();
-    
+
     // CLEARS ALL ELEMENTS IN TOPPING PROPERTY
     pizzaOrder.toppings.splice(0);
 
